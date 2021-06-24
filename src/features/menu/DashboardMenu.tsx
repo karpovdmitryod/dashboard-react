@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import styles from "./DashboardMenu.module.scss"
-import { GridItem } from "../grid/ToolbarGrid";
 import LayoutMenu from "./LayoutMenu";
 import FilterMenu from "./FilterMenu";
 import { useSelector } from "react-redux";
@@ -31,9 +30,7 @@ const DashboardMenu = () => {
   };
 
   return (
-    <GridItem columnSize={5} columnOffset={1} row={1} memoize={false}>
       <div className={styles.dashboardMenu}>
-
         <div className={styles.layoutMenu}>
           <div
             onClick={menuClickHandler({
@@ -56,7 +53,6 @@ const DashboardMenu = () => {
           {menuState.showFilterMenu ? <FilterMenu/> : null}
         </div>
       </div>
-    </GridItem>
   )
 };
 

@@ -1,6 +1,6 @@
 .dashboardMenu {
   display: flex;
-
+  align-items: center;
   font-family: Roboto, serif;
   width: auto;
   font-size: 14px;
@@ -9,6 +9,7 @@
   line-height: 16px;
   letter-spacing: 0;
   text-align: left;
+  height: 100px;
 
   .layoutMenu, .separator {
     color: #96A7AF;

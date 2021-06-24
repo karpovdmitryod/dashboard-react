@@ -30,7 +30,7 @@
   border-bottom: 1px solid black;
 }
 
-.inputContainer input:focus ~ label {
+.inputContainer input:hover ~ label {
   top: -8px;
   font-size: 9px;
 }
