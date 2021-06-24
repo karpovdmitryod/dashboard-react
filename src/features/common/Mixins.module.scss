@@ -1,0 +1,13 @@
+$statuses: (".critical": #FF565E, ".success": #25C685, ".warning":#FF8A34, ".unknown": #475E69);
+$properties: ("BackgroundColor": background-color, "BorderColor": border-color, "TextColor": color);
+
+@mixin generateStatusClasses {
+  @each $statusName, $statusColor in $statuses {
+    @each $propertyName, $cssProperty in $properties {
+      $cssClass: #{$statusName + $propertyName};
+      #{$cssClass} {
+        #{$cssProperty}: #{$statusColor};
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.inputContainer label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  pointer-events:none;
+  transition: all 0.5s ease-in-out;
+}
+
+.inputContainer input {
+  border: 0;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  width: 100%;
+  padding: 8px 0 5px 0;
+  font-size: 11px;
+  color: black;
+}
+
+.inputContainer input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.inputContainer input:focus ~ label {
+  top: -8px;
+  font-size: 9px;
+}

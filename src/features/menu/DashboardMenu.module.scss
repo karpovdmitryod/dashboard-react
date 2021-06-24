@@ -1,0 +1,31 @@
+.dashboardMenu {
+  display: flex;
+
+  font-family: Roboto, serif;
+  width: auto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
+
+  .layoutMenu, .separator {
+    color: #96A7AF;
+  }
+
+  .filterMenu {
+    color: #C9E6F3;
+  }
+
+  .separator {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .filterMenu:hover, .layoutMenu:hover {
+    background-color: #B9C4C9;
+  }
+}
+
+

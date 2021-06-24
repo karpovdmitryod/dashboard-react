@@ -1,0 +1,32 @@
+@import "../common/Colors.module.scss";
+
+@include styleWithStatus("&.filterIcon", background-color);
+@include styleWithStatus("&.filterIcon", border-color);
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  height: 36px;
+  width: 100%;
+  align-items: center;
+}
+
+.noBackground {
+  border-color: #30444E;
+}
+
+.filterIcon {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  position: relative;
+
+  .filterChecked {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

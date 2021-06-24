@@ -1,0 +1,33 @@
+ body {
+   margin: 0;
+ }
+
+ .dashboard-wrap {
+   width: 100%;
+   width: 1440px;
+   background-color: red;
+
+ }
+
+ .dashboard-grid {
+   display: grid;
+   padding-left: 150px;
+   padding-right: 150px;
+   column-gap: 20px;
+
+   grid-template-columns: repeat(12, 1fr);
+ }
+
+ .row1 {
+   grid-row: 1;
+ }
+
+ .row2 {
+   grid-row: 2;
+ }
+
+ .item1 {
+   box-sizing: border-box;
+   grid-column: 3/1 span;
+   background-color: red;
+ }

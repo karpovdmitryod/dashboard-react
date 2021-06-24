@@ -1,0 +1,51 @@
+@import "../../common/Mixins.module.scss";
+
+.menu {
+  border: 1px solid #B9C4C9;
+  background-color: #FFFFFF;
+  z-index: 5;
+  position: absolute;
+  width: 215px;
+  animation-name: animateIn;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+
+  .item {
+    padding: 5px 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item:hover {
+    background-color: #B9C4C9;
+  }
+
+  @include generateStatusClasses;
+
+  .text {
+    font-family: Roboto;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.07999999821186066px;
+    text-align: left;
+    flex-basis: 85%;
+  }
+
+  .defaultColor {
+    color: black;
+  }
+
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

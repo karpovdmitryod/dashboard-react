@@ -1,0 +1,38 @@
+@import "../../../common/Colors.module.scss";
+
+@include styleWithStatus("&.card", border-color);
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+
+  //&.cardAppearence {
+  //  animation-name: cardAppearence;
+  //  animation-duration: 1000ms;
+  //  animation-delay: calc(var(--animation-order) * 300ms);
+  //  animation-fill-mode: both;
+  //  animation-timing-function: linear;
+  //  z-index: 3;
+  //}
+
+  &:hover {
+    border-color: #DEDEDE;
+    z-index: -99;
+  }
+}
+
+//@keyframes cardAppearence {
+//  0% {
+//    opacity: 0;
+//    transform: scale(0.6) translateY(-8px);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//  }
+//}
+

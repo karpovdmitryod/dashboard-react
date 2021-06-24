@@ -1,0 +1,107 @@
+$status-colors: (".critical": #FF565E, ".success": #25C685, ".warning":#FF8A34, ".unknown": #475E69);
+$properties: background-color, color, border-color;
+
+
+
+@mixin styleWithStatus($elementToStyle, $style) {
+  @each $selector, $status in $status-colors {
+    :global(#{$selector}) {
+      #{$elementToStyle} {
+        #{$style}: $status;
+      }
+    }
+  }
+}
+
+// :global(.hoverCritical:hover) {
+//     background-color: $criticalColor;
+//     color: #ffffff;
+// }
+
+// :global(.hoverOk:hover) {
+//     background-color: $successColor;
+//     color: #ffffff;
+
+
+// }
+
+
+// :global(.critical) {
+//     @include card-status($criticalColor);
+// }
+
+// :global(.warning) {
+//     @include card-status($warningColor);
+// }
+
+// :global(.success) {
+//     @include card-status($successColor);
+// }
+
+// :global(.unknown) {
+//     @include card-status($unknownColor);
+// }
+
+
+// .critical,
+// .warning,
+// .ok,
+// .unknown {}
+
+// :global(.hoverWarning:hover) {
+//     background-color: $warningColor;
+//     color: #ffffff;
+// }
+
+// :global(.hoverUnknown:hover) {
+//     background-color: $unknownColor;
+//     color: #ffffff;
+// }
+
+// :global(.success) {
+//     background-color: $successColor;
+// }
+
+// :global(.unknown) {
+//     background-color: $unknownColor;
+// }
+
+// :global(.unknownText) {
+//     color: $unknownColor;
+// }
+
+// :global(.unknownPseudo::before) {
+//     background-color: $unknownColor;
+// }
+
+// :global(.successText) {
+//     color: $successColor;
+// }
+
+// :global(.criticalText) {
+//     color: $criticalColor;
+// }
+
+// :global(.warningText) {
+//     color: $warningColor;
+// }
+
+// :global(.successPseudo::before) {
+//     background-color: $successColor;
+// }
+
+// :global(.critical) {
+//     background-color: $criticalColor;
+// }
+
+// :global(.criticalPseudo::before) {
+//     background-color: $criticalColor;
+// }
+
+// :global(.warningPseudo::before) {
+//     background-color: $warningColor;
+// }
+
+// :global(.warning) {
+//     background-color: $warningColor;
+// }
